@@ -1,0 +1,63 @@
+@primary-color: #ccc;
+@accent-color: #f7d54c;
+
+.stars {
+  position: relative;
+  width: 100px;
+  i {
+    color: goldenrod;
+    width: 20%;
+    font-size: 20px;
+  }
+  .cover {
+    width: 100%;
+    position: absolute;
+    height: 20px;
+    top: 0;
+    right: 0;
+    background: white;
+  }
+}
+
+.tour {
+  border: 2px solid @primary-color;
+  &:last-of-type {
+    border-bottom: 2px solid @primary-color;
+  }
+
+  .title {
+    background: @primary-color;
+
+    @media (min-width: 576px) {
+      height: 90px;
+      overflow: hidden;
+    }
+
+
+    &-container {
+
+      .special {
+        position: absolute;
+        background: white;
+        padding: 2px;
+        bottom: 0px;
+        right: 5px;
+        border: 1px dashed black;
+        transform: rotate(8deg);
+        @media (max-width: 575px) {
+          font-size: 0.75em;
+          bottom: -50px;
+          right: 26px;
+          transform: rotate(-19deg);
+        }
+
+      }
+    }
+  }
+  &.special {
+    .title {
+      background: @accent-color;
+    }
+  }
+
+}
