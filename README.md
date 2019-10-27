@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+To run locally: 
+```
+npm i
+npm run start
+```
+
 This app was a take home challenge for a travel startup in Berlin.
 
-Uses React to call an api and render data.
+React, Axios, Rest, Stateless
